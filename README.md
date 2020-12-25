@@ -18,6 +18,7 @@ This repo is a part of my NVIDIA Isaac Sim Project, and this (experimental) Dock
 
     git clone https://github.com/DmitriZhao/unity-hub-docker
     cd unity-hub-docker
+    wget https://public-cdn.cloud.unity3d.com/hub/prod/UnityHub.AppImage
     docker build . -t unity-hub
     xhost +
     docker run -it \
