@@ -17,6 +17,7 @@ This repo is a part of my NVIDIA Isaac Sim Project, and this (experimental) Dock
 ## HOW-TO
 
     git clone https://github.com/DmitriZhao/unity-hub-docker
+    cd unity-hub-docker
     docker build . -t unity-hub
     xhost +
     docker run -it \
@@ -33,7 +34,7 @@ This repo is a part of my NVIDIA Isaac Sim Project, and this (experimental) Dock
 
 Where /home/username/ws is the location of your project(s), and /opt/unity is the location of your unity editor(s).
 
-If everything goes well, now you can login, activate license, import projects and run UnityEditor with GPU.
+If everything goes well, now you can login, activate license, import projects and run UnityEditor GPU acceleration and container flexibility.
 
 ![UnityEditor with nvidia-docker](.md/unity-in-nvidia-docker.png)
 
