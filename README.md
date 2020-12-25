@@ -1,6 +1,6 @@
 # Unity Hub in Docker container
 
-This repo is a part of my NVIDIA Isaac Sim Project, and this (experimental) Dockerfile is intended to run UnityEditor with nvidia-docker， since I encountered some issues under Ubuntu 20.04.
+This repo is a part of my NVIDIA Isaac Sim Project, and this (experimental) Dockerfile is intended to run UnityEditor with nvidia-docker, since I encountered some issues under Ubuntu 20.04.
 
 ## Prerequisites
 
@@ -34,7 +34,7 @@ This repo is a part of my NVIDIA Isaac Sim Project, and this (experimental) Dock
 
 Where /home/username/ws is the location of your project(s), and /opt/unity is the location of your unity editor(s).
 
-If everything goes well, now you can login, activate license, import projects and run UnityEditor GPU acceleration and container flexibility.
+If everything goes well, now you can login, activate license, import projects and run UnityEditor with both GPU acceleration and container flexibility.
 
 ![UnityEditor with nvidia-docker](.md/unity-in-nvidia-docker.png)
 
@@ -43,3 +43,5 @@ If everything goes well, now you can login, activate license, import projects an
 [1] The main structure: [https://forum.unity.com/threads/headless-mode-isnt-really-headless.761552/](https://forum.unity.com/threads/headless-mode-isnt-really-headless.761552/)
 
 [2] The "dd if" command: [https://github.com/AppImage/AppImageKit/issues/828](https://github.com/AppImage/AppImageKit/issues/828)
+
+[3] "rm nvidia-ml.list": [https://github.com/NVIDIA/nvidia-docker/issues/704](https://github.com/NVIDIA/nvidia-docker/issues/704)
