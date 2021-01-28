@@ -28,6 +28,8 @@ This repo is a part of my NVIDIA Isaac Sim Project, and this (experimental) Dock
         --device /dev/fuse:rw \
         --security-opt apparmor:unconfined \
         --privileged \
+        --network=host \
+        --ipc=host \
         --env "DISPLAY=$DISPLAY" \
         -v /tmp/.X11-unix:/tmp/.X11-unix \
         -v /home/username/ws:/home/username/ws \
